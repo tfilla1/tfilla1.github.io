@@ -1,7 +1,9 @@
 var empty = new Vue({
     el: '#app',
     data: function() {
-        count: 1
+        return {
+            count: 1
+        }
     },
     methods: {
         countUp: function() {

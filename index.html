@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0.4/public/styles/colors.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0.4/public/styles/master.css"
+    />
 </head>
 <body>
-    <h2>hello, world</h2>
-    <div id='app'>
-        {{ count }}
-        <button v-on:click="countUp">count up</button>
+    <div id='app' class='warble container'>
+        <header class='header-container'>
+            <div class='header-title'>blog</div>
+        </header>
+        <div class='content' id='content'>
+            <div v-for='b in blogs'>
+                <div>{{ b }}</div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src='public/js/empty.js'></script>
